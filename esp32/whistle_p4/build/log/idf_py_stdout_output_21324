@@ -1,0 +1,60 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\ibtivia\cactus_clone\whistle-esp32\esp32\whistle_p4\build && C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build/partition_table/partition-table.bin D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build/whistle_p4.bin"
+whistle_p4.bin binary size 0x6a190 bytes. Smallest app partition is 0x200000 bytes. 0x195e70 bytes (79%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\ibtivia\cactus_clone\whistle-esp32\esp32\whistle_p4\build\bootloader && C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5870 bytes. 0x790 bytes (8%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32p4 -p COM8 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 32MB 0x2000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 whistle_p4.bin --diff-with bootloader/bootloader_flashed.bin partition_table/partition-table_flashed.bin whistle_p4_flashed.bin
+esptool v5.6.0
+Serial port COM8:
+Connecting....
+Connected to ESP32-P4 on COM8:
+Chip type:          ESP32-P4 (revision v3.2)
+Features:           Dual Core + LP Core, 400MHz
+Crystal frequency:  40MHz
+MAC:                e8:f6:0a:e8:ac:d7
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00002000...
+SHA digest in image updated.
+SHA digest in image updated.
+Changed data sectors found, fast reflashing...
+Reflashing 6 changed sectors at 0x00002000...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Compressed 24576 bytes to 14343...
+Writing at 0x00008000 ------------------------------ 100.0% 14.01kB/14.01kB [0s] 
+Wrote 24576 bytes (14343 compressed) at 0x00002000 in 0.6 seconds (318.2 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+No changed sectors found, verifying if data is in flash...
+NOTE: Data not found in flash, flashing the whole image...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 3072 bytes to 119...
+Writing at 0x00008c00 ------------------------------ 100.0% 119B/119B [0s] 
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (1953.0 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'whistle_p4.bin' at 0x00010000...
+Changed data sectors found, fast reflashing...
+Reflashing 107 changed sectors at 0x00010000...
+Flash will be erased from 0x00010000 to 0x0007afff...
+Compressed 438272 bytes to 261352...
+Writing at 0x0001cd7c - ----------------------------   6.3% 16.00kB/255.23kB [0s] Writing at 0x000248f5 --- --------------------------  12.5% 32.00kB/255.23kB [0s] Writing at 0x0002a492 ----- ------------------------  18.8% 48.00kB/255.23kB [1s] Writing at 0x000306ed ------- ----------------------  25.1% 64.00kB/255.23kB [1s] Writing at 0x00036426 --------- --------------------  31.3% 80.00kB/255.23kB [2s] Writing at 0x0003c957 ----------- ------------------  37.6% 96.00kB/255.23kB [2s] Writing at 0x000423d7 ------------- ----------------  43.9% 112.00kB/255.23kB [2s] Writing at 0x00047e8e --------------- --------------  50.2% 128.00kB/255.23kB [3s] Writing at 0x0004e327 ---------------- -------------  56.4% 144.00kB/255.23kB [3s] Writing at 0x000545f2 ------------------ -----------  62.7% 160.00kB/255.23kB [4s] Writing at 0x00059832 -------------------- ---------  69.0% 176.00kB/255.23kB [4s] Writing at 0x0006061f ---------------------- -------  75.2% 192.00kB/255.23kB [4s] Writing at 0x00065dda ------------------------ -----  81.5% 208.00kB/255.23kB [5s] Writing at 0x0006bd31 -------------------------- ---  87.8% 224.00kB/255.23kB [5s] Writing at 0x00072793 ---------------------------- -  94.0% 240.00kB/255.23kB [6s] Writing at 0x0007b000 ------------------------------ 100.0% 255.23kB/255.23kB [6s] 
+Wrote 438272 bytes (261352 compressed) at 0x00010000 in 6.7 seconds (521.4 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...

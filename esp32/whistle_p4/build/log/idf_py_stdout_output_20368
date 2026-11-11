@@ -1,0 +1,287 @@
+Command: C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 301 --decode-panic backtrace D:\ibtivia\cactus_clone\whistle-esp32\esp32\whistle_p4\build\whistle_p4.elf D:\ibtivia\cactus_clone\whistle-esp32\esp32\whistle_p4\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM8'
+ESP-ROM:esp32p4-eco7-20260109
+Build:Jan  9 2026
+rst:0x1 (POWERON),boot:0x31f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ffb60d0,len:0x1168
+load:0x4ffab2c0,len:0x10a4
+load:0x4ffadfc0,len:0x3610
+entry 0x4ffab2c0
+[0;32mI (102) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (103) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (103) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (104) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (108) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (113) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (117) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (122) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (126) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (130) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (135) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (140) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (144) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (302) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (302) esp_psram: Speed: 200MHz[0m
+[0;32mI (303) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (752) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (762) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (762) cpu_start: Pro cpu start user code[0m
+[0;32mI (762) cpu_start: cpu freq: 400000000 Hz[0m
+[0;32mI (764) app_init: Application information:[0m
+[0;32mI (768) app_init: Project name:     whistle_p4[0m
+[0;32mI (772) app_init: App version:      383e008-dirty[0m
+[0;32mI (776) app_init: Compile time:     Nov 11 2026 10:51:31[0m
+[0;32mI (781) app_init: ELF file SHA256:  8f7674acb...[0m
+[0;32mI (786) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (789) efuse_init: Min chip rev:     v3.1[0m
+[0;32mI (793) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (797) efuse_init: Chip rev:         v3.2[0m
+[0;32mI (801) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (807) heap_init: At 4FF5DED0 len 0005D0F0 (372 KiB): RETENT_RAM[0m
+[0;32mI (813) heap_init: At 4FFBAFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (818) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (823) heap_init: At 30100288 len 00001D78 (7 KiB): SPM[0m
+[0;32mI (829) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (836) spi_flash: detected chip: gd[0m
+[0;32mI (838) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (848) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (855) sleep_clock: System sleep clock ICG setting initialization[0m
+[0;32mI (861) main_task: Started on CPU0[0m
+[0;32mI (879) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations[0m
+[0;32mI (879) main_task: Calling app_main()[0m
+[0;32mI (884) SD_HOST: src_freq_hz: 160000000[0m
+Name: 00000
+Type: SDHC
+Speed: 10.00 MHz (limit: 10.00 MHz)
+Size: 30528MB
+CSD: ver=2, sector_size=512, capacity=62521344 read_bl_len=9
+SSR: bus_width=1
+EVT sd mounted total_mb=30519 free_mb=30493
+EVT sd ready
+[0;32mI (982) es8311: ready: 16 kHz, 16-bit, analog mic, MCLK 256x[0m
+EVT audio max_sec=30 slots=4 preroll_ms=300 vad_start_db=9.0 vad_end_db=5.0
+EVT pie_dot ok sum=8832
+EVT head_in_psram bytes=2164536 ms=75
+EVT ready model=whistle depth=4 enc_layers=8 d_model=512 vocab=8199 psram_free=27133896 internal_free=381519
+
+EVT ==================================================
+EVT  LISTENING - speak; each utterance is transcribed
+EVT  max=30 s  depth=4  VAD start=9 dB above floor
+EVT ==================================================
+
+[0;32mI (1101) main_task: Returned from app_main()[0m
+EVT speech_start floor_dbfs=-77.5 rms_dbfs=-68.4
+EVT speech_end ms=1180 peak_dbfs=-57.1 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=1180 encode_ms=1118 decode_ms=927 tokens=4 peak_dbfs=-57.1
+LOG rec_00125.wav
+EVT speech_start floor_dbfs=-77.3 rms_dbfs=-58.3
+EVT speech_end ms=1800 peak_dbfs=-51.7 clipped=0
+EVT speech_start floor_dbfs=-71.7 rms_dbfs=-61.3
+EVT speech_end ms=1620 peak_dbfs=-51.9 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=1800 encode_ms=1696 decode_ms=951 tokens=4 peak_dbfs=-51.7
+LOG rec_00126.wav
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=1620 encode_ms=1551 decode_ms=945 tokens=4 peak_dbfs=-51.9
+LOG rec_00127.wav
+EVT speech_start floor_dbfs=-77.9 rms_dbfs=-68.7
+EVT speech_end ms=640 peak_dbfs=-56.9 clipped=0
+EVT lang en
+TXT Yeah.
+EVT time audio_ms=640 encode_ms=635 decode_ms=775 tokens=3 peak_dbfs=-56.9
+LOG rec_00128.wav
+EVT speech_start floor_dbfs=-77.3 rms_dbfs=-65.6
+EVT speech_end ms=680 peak_dbfs=-58.9 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=680 encode_ms=721 decode_ms=911 tokens=4 peak_dbfs=-58.9
+LOG rec_00129.wav
+EVT speech_start floor_dbfs=-77.4 rms_dbfs=-66.9
+EVT speech_end ms=520 peak_dbfs=-60.2 clipped=0
+EVT lang en
+TXT you
+EVT time audio_ms=520 encode_ms=583 decode_ms=641 tokens=2 peak_dbfs=-60.2
+LOG rec_00130.wav
+EVT speech_start floor_dbfs=-76.1 rms_dbfs=-49.9
+EVT speech_end ms=2080 peak_dbfs=-41.3 clipped=0
+EVT speech_start floor_dbfs=-77.7 rms_dbfs=-54.4
+EVT speech_end ms=2220 peak_dbfs=-41.3 clipped=0
+EVT speech_start floor_dbfs=-77.6 rms_dbfs=-66.8
+EVT lang en
+TXT Hello, my name is Kashiff.
+EVT time audio_ms=2080 encode_ms=1917 decode_ms=1910 tokens=11 peak_dbfs=-41.3
+LOG rec_00131.wav
+EVT speech_end ms=3000 peak_dbfs=-41.5 clipped=0
+EVT lang en
+TXT I hope you are able to hear me.
+EVT time audio_ms=2220 encode_ms=2065 decode_ms=1645 tokens=9 peak_dbfs=-41.3
+LOG rec_00132.wav
+EVT speech_start floor_dbfs=-78.8 rms_dbfs=-68.0
+EVT speech_end ms=560 peak_dbfs=-52.7 clipped=0
+EVT lang en
+TXT Let me know if this is fine.
+EVT time audio_ms=3000 encode_ms=2834 decode_ms=1681 tokens=9 peak_dbfs=-41.5
+LOG rec_00133.wav
+EVT lang en
+TXT you
+EVT time audio_ms=560 encode_ms=586 decode_ms=642 tokens=2 peak_dbfs=-52.7
+LOG rec_00134.wav
+EVT speech_start floor_dbfs=-75.5 rms_dbfs=-56.7
+EVT speech_end ms=2060 peak_dbfs=-47.0 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=2060 encode_ms=1912 decode_ms=961 tokens=4 peak_dbfs=-47.0
+LOG rec_00135.wav
+EVT speech_start floor_dbfs=-78.1 rms_dbfs=-68.3
+EVT speech_end ms=500 peak_dbfs=-62.7 clipped=0
+EVT lang en
+TXT you
+EVT time audio_ms=500 encode_ms=583 decode_ms=642 tokens=2 peak_dbfs=-62.7
+LOG rec_00136.wav
+EVT speech_start floor_dbfs=-78.9 rms_dbfs=-69.3
+EVT speech_end ms=620 peak_dbfs=-59.7 clipped=0
+EVT speech_start floor_dbfs=-78.8 rms_dbfs=-63.0
+EVT lang en
+TXT you
+EVT time audio_ms=620 encode_ms=635 decode_ms=644 tokens=2 peak_dbfs=-59.7
+LOG rec_00137.wav
+EVT speech_end ms=820 peak_dbfs=-55.7 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=820 encode_ms=848 decode_ms=916 tokens=4 peak_dbfs=-55.7
+LOG rec_00138.wav
+EVT speech_start floor_dbfs=-75.0 rms_dbfs=-33.0
+EVT speech_end ms=1140 peak_dbfs=-12.2 clipped=0
+EVT speech_start floor_dbfs=-76.9 rms_dbfs=-60.4
+EVT speech_end ms=580 peak_dbfs=-54.7 clipped=0
+EVT lang en
+TXT There you go.
+EVT time audio_ms=1140 encode_ms=1113 decode_ms=928 tokens=4 peak_dbfs=-12.2
+LOG rec_00139.wav
+EVT speech_start floor_dbfs=-79.0 rms_dbfs=-69.0
+EVT speech_end ms=500 peak_dbfs=-59.7 clipped=0
+EVT lang en
+TXT Yeah.
+EVT time audio_ms=580 encode_ms=628 decode_ms=775 tokens=3 peak_dbfs=-54.7
+LOG rec_00140.wav
+EVT lang en
+TXT you
+EVT time audio_ms=500 encode_ms=583 decode_ms=641 tokens=2 peak_dbfs=-59.7
+LOG rec_00141.wav
+EVT speech_start floor_dbfs=-78.5 rms_dbfs=-63.2
+EVT speech_end ms=1060 peak_dbfs=-56.0 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=1060 encode_ms=1032 decode_ms=925 tokens=4 peak_dbfs=-56.0
+LOG rec_00142.wav
+EVT speech_start floor_dbfs=-77.3 rms_dbfs=-57.0
+EVT speech_end ms=3460 peak_dbfs=-38.8 clipped=0
+EVT speech_start floor_dbfs=-76.6 rms_dbfs=-61.9
+EVT lang en
+TXT You've reached the final lesson in my cryptography essential series.
+EVT time audio_ms=3460 encode_ms=3316 decode_ms=2535 tokens=15 peak_dbfs=-38.8
+LOG rec_00143.wav
+EVT speech_end ms=14160 peak_dbfs=-30.2 clipped=0
+EVT speech_start floor_dbfs=-71.7 rms_dbfs=-57.5
+EVT speech_end ms=4060 peak_dbfs=-31.9 clipped=0
+EVT speech_start floor_dbfs=-74.0 rms_dbfs=-52.5
+EVT speech_end ms=3880 peak_dbfs=-34.0 clipped=0
+EVT speech_start floor_dbfs=-74.5 rms_dbfs=-64.6
+EVT speech_end ms=8080 peak_dbfs=-31.3 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-73.8 rms_dbfs=-49.3
+EVT speech_end ms=3240 peak_dbfs=-32.7 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-75.0 rms_dbfs=-61.6
+EVT speech_end ms=4560 peak_dbfs=-33.4 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-75.7 rms_dbfs=-60.3
+EVT lang en
+TXT And if you play back the transcript, you'll find we haven't mentioned a little bit curves once. But what if I told you we've been talking about a little bit curves this entire time? Let me explain.
+EVT time audio_ms=14160 encode_ms=17674 decode_ms=8828 tokens=51 peak_dbfs=-30.2
+LOG rec_00144.wav
+EVT speech_end ms=3440 peak_dbfs=-43.1 clipped=0
+EVT speech_start floor_dbfs=-70.0 rms_dbfs=-41.1
+EVT lang en
+TXT One of those key uses generally may public and any other ones can pride.
+EVT time audio_ms=3240 encode_ms=3088 decode_ms=2660 tokens=16 peak_dbfs=-32.7
+LOG rec_00145.wav
+EVT speech_end ms=5220 peak_dbfs=-31.9 clipped=0
+EVT speech_start floor_dbfs=-71.2 rms_dbfs=-45.2
+EVT speech_end ms=2240 peak_dbfs=-35.8 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-75.0 rms_dbfs=-48.6
+EVT lang en
+TXT We then discussed the three different operations that exist within Asymmetric cryptography.
+EVT time audio_ms=4560 encode_ms=4415 decode_ms=3017 tokens=18 peak_dbfs=-33.4
+LOG rec_00146.wav
+EVT speech_end ms=6220 peak_dbfs=-36.5 clipped=0
+EVT speech_start floor_dbfs=-75.2 rms_dbfs=-44.3
+EVT lang en
+TXT And finally, we discussed the three algorithms that you can use to do one or more of these operations.
+EVT time audio_ms=5220 encode_ms=5248 decode_ms=4209 tokens=26 peak_dbfs=-31.9
+LOG rec_00147.wav
+EVT speech_end ms=5500 peak_dbfs=-33.2 clipped=0
+EVT speech_start floor_dbfs=-78.0 rms_dbfs=-63.7
+EVT speech_end ms=780 peak_dbfs=-53.9 clipped=0
+EVT lang en
+TXT RSA to Felom and DSA.
+EVT time audio_ms=2240 encode_ms=2069 decode_ms=2051 tokens=12 peak_dbfs=-35.8
+LOG rec_00148.wav
+EVT speech_start floor_dbfs=-78.1 rms_dbfs=-66.9
+EVT speech_end ms=700 peak_dbfs=-55.3 clipped=0
+EVT lang en
+TXT All of this, we covered earlier in a series. So if any of this is unfamiliar to you, please check out the links in the description.
+EVT time audio_ms=6220 encode_ms=6339 decode_ms=5434 tokens=34 peak_dbfs=-36.5
+LOG rec_00149.wav
+EVT speech_start floor_dbfs=-77.7 rms_dbfs=-66.9
+EVT speech_end ms=640 peak_dbfs=-55.8 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.4 rms_dbfs=-63.4
+EVT speech_end ms=1000 peak_dbfs=-46.1 clipped=0
+EVT lang en
+TXT As for us, now that we've already covered all this, we can have a productive conversation about a lipid curcopography.
+EVT time audio_ms=5500 encode_ms=5510 decode_ms=5087 tokens=32 peak_dbfs=-33.2
+LOG rec_00150.wav
+EVT lang en
+TXT you
+EVT time audio_ms=700 encode_ms=723 decode_ms=647 tokens=2 peak_dbfs=-55.3
+LOG rec_00151.wav
+EVT lang en
+TXT you
+EVT time audio_ms=640 encode_ms=635 decode_ms=643 tokens=2 peak_dbfs=-55.8
+LOG rec_00152.wav
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=1000 encode_ms=983 decode_ms=922 tokens=4 peak_dbfs=-46.1
+LOG rec_00153.wav
+EVT speech_start floor_dbfs=-77.2 rms_dbfs=-66.9
+EVT speech_end ms=560 peak_dbfs=-57.2 clipped=0
+EVT lang en
+TXT you
+EVT time audio_ms=560 encode_ms=588 decode_ms=641 tokens=2 peak_dbfs=-57.2
+LOG rec_00154.wav
+EVT speech_start floor_dbfs=-76.1 rms_dbfs=-65.8
+EVT speech_end ms=540 peak_dbfs=-59.4 clipped=0
+EVT lang en
+TXT you
+EVT time audio_ms=540 encode_ms=585 decode_ms=641 tokens=2 peak_dbfs=-59.4
+LOG rec_00155.wav
+EVT speech_start floor_dbfs=-76.9 rms_dbfs=-64.2
+EVT speech_end ms=720 peak_dbfs=-57.1 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=720 encode_ms=726 decode_ms=912 tokens=4 peak_dbfs=-57.1
+LOG rec_00156.wav
+EVT speech_start floor_dbfs=-77.0 rms_dbfs=-65.8
+EVT speech_end ms=840 peak_dbfs=-57.6 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=840 encode_ms=850 decode_ms=916 tokens=4 peak_dbfs=-57.6
+LOG rec_00157.wav

@@ -1,0 +1,5 @@
+"-specs=D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build/bootloader/specs/picolibc.specs"
+-mabi=ilp32f
+-march=rv32imafc_zicsr_zifencei_zaamo_zalrsc_xesploop_xespv
+-mtune=esp-base
+-fno-rtti

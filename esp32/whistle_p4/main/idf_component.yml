@@ -1,0 +1,4 @@
+## No managed components: the ES8311 is driven directly over the new I2C
+## master API, so the build needs no network access or component download.
+dependencies:
+  idf: ">=5.5"

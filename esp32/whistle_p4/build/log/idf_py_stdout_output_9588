@@ -1,0 +1,201 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32p4
+NOTE: Processing 1 dependencies:
+NOTE: [1/1] idf (6.1.0)
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/sdkconfig
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script C:/esp/v6.1/esp-idf/components/riscv/ld/rom.api.ld
+-- App "whistle_p4" version: 383e008-dirty
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_hal_wdt/esp32p4/rom.wdt.ld
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_system/ld/esp32p4/memory.ld.in
+--   -> Preprocessing .in script: C:/esp/v6.1/esp-idf/components/esp_system/ld/esp32p4/memory.ld.in
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_system/ld/esp32p4/sections.ld.in
+--   -> Preprocessing .in script: C:/esp/v6.1/esp-idf/components/esp_system/ld/esp32p4/sections.ld.in
+--   -> Applying ldgen processing: D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.ld
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.api.ld
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.rvfp.ld
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.version.ld
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.libc.ld
+-- Adding linker script C:/esp/v6.1/esp-idf/components/soc/esp32p4/ld/esp32p4.peripherals.ld
+-- Adding linker script C:/esp/v6.1/esp-idf/components/esp_hal_systimer/esp32p4/rom.systimer.ld
+-- Component idf::esp_trace will be linked with -Wl,--whole-archive
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_asrc_adapter esp_blockdev esp_blockdev_util esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_cordic esp_driver_dac esp_driver_dma esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_i3c esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ana_cmpr esp_hal_ana_conv esp_hal_asrc esp_hal_cam esp_hal_clock esp_hal_cordic esp_hal_dma esp_hal_emac esp_hal_gpio esp_hal_gpspi esp_hal_i2c esp_hal_i2s esp_hal_i3c esp_hal_ieee802154 esp_hal_jpeg esp_hal_lcd esp_hal_ledc esp_hal_mcpwm esp_hal_mspi esp_hal_parlio esp_hal_pcnt esp_hal_pmu esp_hal_ppa esp_hal_regi2c esp_hal_rmt esp_hal_rtc_timer esp_hal_sd esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_twai esp_hal_uart esp_hal_usb esp_hal_wdt esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_libc esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_stdio esp_system esp_timer esp_trace esp_usb_cdc_rom_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser ieee802154 log lwip main mbedtls needle nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity vfs wear_levelling wpa_supplicant
+-- Component paths: C:/esp/v6.1/esp-idf/components/app_trace C:/esp/v6.1/esp-idf/components/app_update C:/esp/v6.1/esp-idf/components/bootloader C:/esp/v6.1/esp-idf/components/bootloader_support C:/esp/v6.1/esp-idf/components/bt C:/esp/v6.1/esp-idf/components/cmock C:/esp/v6.1/esp-idf/components/console C:/esp/v6.1/esp-idf/components/cxx C:/esp/v6.1/esp-idf/components/driver C:/esp/v6.1/esp-idf/components/efuse C:/esp/v6.1/esp-idf/components/esp-tls C:/esp/v6.1/esp-idf/components/esp_adc C:/esp/v6.1/esp-idf/components/esp_app_format C:/esp/v6.1/esp-idf/components/esp_asrc_adapter C:/esp/v6.1/esp-idf/components/esp_blockdev C:/esp/v6.1/esp-idf/components/esp_blockdev_util C:/esp/v6.1/esp-idf/components/esp_bootloader_format C:/esp/v6.1/esp-idf/components/esp_coex C:/esp/v6.1/esp-idf/components/esp_common C:/esp/v6.1/esp-idf/components/esp_driver_ana_cmpr C:/esp/v6.1/esp-idf/components/esp_driver_bitscrambler C:/esp/v6.1/esp-idf/components/esp_driver_cam C:/esp/v6.1/esp-idf/components/esp_driver_cordic C:/esp/v6.1/esp-idf/components/esp_driver_dac C:/esp/v6.1/esp-idf/components/esp_driver_dma C:/esp/v6.1/esp-idf/components/esp_driver_gpio C:/esp/v6.1/esp-idf/components/esp_driver_gptimer C:/esp/v6.1/esp-idf/components/esp_driver_i2c C:/esp/v6.1/esp-idf/components/esp_driver_i2s C:/esp/v6.1/esp-idf/components/esp_driver_i3c C:/esp/v6.1/esp-idf/components/esp_driver_isp C:/esp/v6.1/esp-idf/components/esp_driver_jpeg C:/esp/v6.1/esp-idf/components/esp_driver_ledc C:/esp/v6.1/esp-idf/components/esp_driver_mcpwm C:/esp/v6.1/esp-idf/components/esp_driver_parlio C:/esp/v6.1/esp-idf/components/esp_driver_pcnt C:/esp/v6.1/esp-idf/components/esp_driver_ppa C:/esp/v6.1/esp-idf/components/esp_driver_rmt C:/esp/v6.1/esp-idf/components/esp_driver_sd_intf C:/esp/v6.1/esp-idf/components/esp_driver_sdio C:/esp/v6.1/esp-idf/components/esp_driver_sdm C:/esp/v6.1/esp-idf/components/esp_driver_sdmmc C:/esp/v6.1/esp-idf/components/esp_driver_sdspi C:/esp/v6.1/esp-idf/components/esp_driver_spi C:/esp/v6.1/esp-idf/components/esp_driver_touch_sens C:/esp/v6.1/esp-idf/components/esp_driver_tsens C:/esp/v6.1/esp-idf/components/esp_driver_twai C:/esp/v6.1/esp-idf/components/esp_driver_uart C:/esp/v6.1/esp-idf/components/esp_driver_usb_serial_jtag C:/esp/v6.1/esp-idf/components/esp_eth C:/esp/v6.1/esp-idf/components/esp_event C:/esp/v6.1/esp-idf/components/esp_gdbstub C:/esp/v6.1/esp-idf/components/esp_hal_ana_cmpr C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv C:/esp/v6.1/esp-idf/components/esp_hal_asrc C:/esp/v6.1/esp-idf/components/esp_hal_cam C:/esp/v6.1/esp-idf/components/esp_hal_clock C:/esp/v6.1/esp-idf/components/esp_hal_cordic C:/esp/v6.1/esp-idf/components/esp_hal_dma C:/esp/v6.1/esp-idf/components/esp_hal_emac C:/esp/v6.1/esp-idf/components/esp_hal_gpio C:/esp/v6.1/esp-idf/components/esp_hal_gpspi C:/esp/v6.1/esp-idf/components/esp_hal_i2c C:/esp/v6.1/esp-idf/components/esp_hal_i2s C:/esp/v6.1/esp-idf/components/esp_hal_i3c C:/esp/v6.1/esp-idf/components/esp_hal_ieee802154 C:/esp/v6.1/esp-idf/components/esp_hal_jpeg C:/esp/v6.1/esp-idf/components/esp_hal_lcd C:/esp/v6.1/esp-idf/components/esp_hal_ledc C:/esp/v6.1/esp-idf/components/esp_hal_mcpwm C:/esp/v6.1/esp-idf/components/esp_hal_mspi C:/esp/v6.1/esp-idf/components/esp_hal_parlio C:/esp/v6.1/esp-idf/components/esp_hal_pcnt C:/esp/v6.1/esp-idf/components/esp_hal_pmu C:/esp/v6.1/esp-idf/components/esp_hal_ppa C:/esp/v6.1/esp-idf/components/esp_hal_regi2c C:/esp/v6.1/esp-idf/components/esp_hal_rmt C:/esp/v6.1/esp-idf/components/esp_hal_rtc_timer C:/esp/v6.1/esp-idf/components/esp_hal_sd C:/esp/v6.1/esp-idf/components/esp_hal_security C:/esp/v6.1/esp-idf/components/esp_hal_systimer C:/esp/v6.1/esp-idf/components/esp_hal_timg C:/esp/v6.1/esp-idf/components/esp_hal_touch_sens C:/esp/v6.1/esp-idf/components/esp_hal_twai C:/esp/v6.1/esp-idf/components/esp_hal_uart C:/esp/v6.1/esp-idf/components/esp_hal_usb C:/esp/v6.1/esp-idf/components/esp_hal_wdt C:/esp/v6.1/esp-idf/components/esp_hid C:/esp/v6.1/esp-idf/components/esp_http_client C:/esp/v6.1/esp-idf/components/esp_http_server C:/esp/v6.1/esp-idf/components/esp_https_ota C:/esp/v6.1/esp-idf/components/esp_https_server C:/esp/v6.1/esp-idf/components/esp_hw_support C:/esp/v6.1/esp-idf/components/esp_lcd C:/esp/v6.1/esp-idf/components/esp_libc C:/esp/v6.1/esp-idf/components/esp_local_ctrl C:/esp/v6.1/esp-idf/components/esp_mm C:/esp/v6.1/esp-idf/components/esp_netif C:/esp/v6.1/esp-idf/components/esp_netif_stack C:/esp/v6.1/esp-idf/components/esp_partition C:/esp/v6.1/esp-idf/components/esp_phy C:/esp/v6.1/esp-idf/components/esp_pm C:/esp/v6.1/esp-idf/components/esp_psram C:/esp/v6.1/esp-idf/components/esp_ringbuf C:/esp/v6.1/esp-idf/components/esp_rom C:/esp/v6.1/esp-idf/components/esp_security C:/esp/v6.1/esp-idf/components/esp_stdio C:/esp/v6.1/esp-idf/components/esp_system C:/esp/v6.1/esp-idf/components/esp_timer C:/esp/v6.1/esp-idf/components/esp_trace C:/esp/v6.1/esp-idf/components/esp_usb_cdc_rom_console C:/esp/v6.1/esp-idf/components/esp_wifi C:/esp/v6.1/esp-idf/components/espcoredump C:/esp/v6.1/esp-idf/components/esptool_py C:/esp/v6.1/esp-idf/components/fatfs C:/esp/v6.1/esp-idf/components/freertos C:/esp/v6.1/esp-idf/components/hal C:/esp/v6.1/esp-idf/components/heap C:/esp/v6.1/esp-idf/components/http_parser C:/esp/v6.1/esp-idf/components/ieee802154 C:/esp/v6.1/esp-idf/components/log C:/esp/v6.1/esp-idf/components/lwip D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main C:/esp/v6.1/esp-idf/components/mbedtls D:/ibtivia/cactus_clone/whistle-esp32/esp32/needle_demo/components/needle C:/esp/v6.1/esp-idf/components/nvs_flash C:/esp/v6.1/esp-idf/components/nvs_sec_provider C:/esp/v6.1/esp-idf/components/openthread C:/esp/v6.1/esp-idf/components/partition_table C:/esp/v6.1/esp-idf/components/protobuf-c C:/esp/v6.1/esp-idf/components/protocomm C:/esp/v6.1/esp-idf/components/pthread C:/esp/v6.1/esp-idf/components/riscv C:/esp/v6.1/esp-idf/components/rt C:/esp/v6.1/esp-idf/components/sdmmc C:/esp/v6.1/esp-idf/components/soc C:/esp/v6.1/esp-idf/components/spi_flash C:/esp/v6.1/esp-idf/components/spiffs C:/esp/v6.1/esp-idf/components/tcp_transport C:/esp/v6.1/esp-idf/components/ulp C:/esp/v6.1/esp-idf/components/unity C:/esp/v6.1/esp-idf/components/vfs C:/esp/v6.1/esp-idf/components/wear_levelling C:/esp/v6.1/esp-idf/components/wpa_supplicant
+-- Configuring done (49.9s)
+-- Generating done (4.2s)
+-- Build files have been written to: D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build
+[1/148] Building ASM object esp-idf/needle/CMakeFiles/__idf_needle.dir/D_/ibtivia/cactus_clone/whistle-esp32/engine/src/nd_p4_dot.S.obj
+[2/148] Linking C static library esp-idf\esp_driver_isp\libesp_driver_isp.a
+[3/148] Linking C static library esp-idf\esp_hal_ana_cmpr\libesp_hal_ana_cmpr.a
+[4/148] Building C object esp-idf/esp_blockdev_util/CMakeFiles/__idf_esp_blockdev_util.dir/memory.c.obj
+[5/148] Building C object esp-idf/esp_blockdev_util/CMakeFiles/__idf_esp_blockdev_util.dir/generic_partition.c.obj
+[6/148] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/esp_cam_ctlr.c.obj
+[7/148] Building C object esp-idf/esp_driver_ana_cmpr/CMakeFiles/__idf_esp_driver_ana_cmpr.dir/ana_cmpr_etm.c.obj
+[8/148] Building C object esp-idf/needle/CMakeFiles/__idf_needle.dir/D_/ibtivia/cactus_clone/whistle-esp32/engine/src/nd_quant.c.obj
+[9/148] Building C object esp-idf/esp_driver_ana_cmpr/CMakeFiles/__idf_esp_driver_ana_cmpr.dir/ana_cmpr.c.obj
+[10/148] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj
+[11/148] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp_share_ctrl.c.obj
+[12/148] Linking C static library esp-idf\esp_driver_i2c\libesp_driver_i2c.a
+[13/148] Linking C static library esp-idf\esp_hal_i3c\libesp_hal_i3c.a
+[14/148] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp/src/esp_cam_ctlr_dvp_gdma.c.obj
+[15/148] Linking C static library esp-idf\esp_hal_jpeg\libesp_hal_jpeg.a
+[16/148] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj
+[17/148] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/isp_dvp/src/esp_cam_ctlr_isp_dvp.c.obj
+[18/148] Building C object esp-idf/esp_driver_jpeg/CMakeFiles/__idf_esp_driver_jpeg.dir/jpeg_param.c.obj
+[19/148] Building C object esp-idf/esp_driver_jpeg/CMakeFiles/__idf_esp_driver_jpeg.dir/jpeg_common.c.obj
+[20/148] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp/src/esp_cam_ctlr_dvp_cam.c.obj
+[21/148] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/csi/src/esp_cam_ctlr_csi.c.obj
+[22/148] Linking C static library esp-idf\esp_hal_ledc\libesp_hal_ledc.a
+[23/148] Linking C static library esp-idf\esp_hal_mcpwm\libesp_hal_mcpwm.a
+[24/148] Building C object esp-idf/esp_driver_jpeg/CMakeFiles/__idf_esp_driver_jpeg.dir/jpeg_emit_marker.c.obj
+[25/148] Building C object esp-idf/esp_driver_jpeg/CMakeFiles/__idf_esp_driver_jpeg.dir/jpeg_parse_marker.c.obj
+[26/148] Building C object esp-idf/esp_driver_jpeg/CMakeFiles/__idf_esp_driver_jpeg.dir/jpeg_decode.c.obj
+[27/148] Building C object esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc_etm.c.obj
+[28/148] Building C object esp-idf/esp_driver_jpeg/CMakeFiles/__idf_esp_driver_jpeg.dir/jpeg_encode.c.obj
+[29/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cmpr.c.obj
+[30/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_com.c.obj
+[31/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cap.c.obj
+[32/148] Building C object esp-idf/esp_driver_i3c/CMakeFiles/__idf_esp_driver_i3c.dir/i3c_master.c.obj
+[33/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_fault.c.obj
+[34/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_sync.c.obj
+[35/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_gen.c.obj
+[36/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/esp32p4/mcpwm_retention.c.obj
+[37/148] Building C object esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj
+[38/148] Linking C static library esp-idf\esp_driver_parlio\libesp_driver_parlio.a
+[39/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_oper.c.obj
+[40/148] Linking C static library esp-idf\esp_hal_ppa\libesp_hal_ppa.a
+[41/148] Linking C static library esp-idf\esp_hal_pcnt\libesp_hal_pcnt.a
+[42/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_etm.c.obj
+[43/148] Building C object esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_timer.c.obj
+[44/148] Linking C static library esp-idf\esp_hal_rmt\libesp_hal_rmt.a
+[45/148] Building C object esp-idf/esp_driver_ppa/CMakeFiles/__idf_esp_driver_ppa.dir/esp32p4/ppa_retention.c.obj
+[46/148] Building C object esp-idf/esp_driver_ppa/CMakeFiles/__idf_esp_driver_ppa.dir/src/ppa_core.c.obj
+[47/148] Building C object esp-idf/esp_driver_ppa/CMakeFiles/__idf_esp_driver_ppa.dir/src/ppa_fill.c.obj
+[48/148] Building C object esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/src/pulse_cnt.c.obj
+[49/148] Building C object esp-idf/esp_driver_ppa/CMakeFiles/__idf_esp_driver_ppa.dir/src/ppa_srm.c.obj
+[50/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_common.c.obj
+[51/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder.c.obj
+[52/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_bytes.c.obj
+[53/148] Building C object esp-idf/esp_driver_ppa/CMakeFiles/__idf_esp_driver_ppa.dir/src/ppa_blend.c.obj
+[54/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_copy.c.obj
+[55/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/esp32p4/rmt_retention.c.obj
+[56/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_simple.c.obj
+[57/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_bs.c.obj
+[58/148] Building C object esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor_etm.c.obj
+[59/148] Building C object esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/src/sdm.c.obj
+[60/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_rx.c.obj
+[61/148] Building C object esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj
+[62/148] Building C object esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_tx.c.obj
+[63/148] Building C object esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/common/touch_sens_common.c.obj
+[64/148] Building C object esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/hw_ver3/touch_version_specific.c.obj
+[65/148] Linking C static library esp-idf\esp_hal_emac\libesp_hal_emac.a
+[66/148] Building C object esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/twai_frame_queue.c.obj
+[67/148] Building C object esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai.c.obj
+[68/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp32p4/emac_retention.c.obj
+[69/148] Building C object esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai_onchip.c.obj
+[70/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.obj
+[71/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj
+[72/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
+[73/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.obj
+[74/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.obj
+[75/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj
+[76/148] Linking C static library esp-idf\esp_hal_lcd\libesp_hal_lcd.a
+[77/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/eth_clock/esp_eth_clock.c.obj
+[78/148] Linking C static library esp-idf\esp_https_server\libesp_https_server.a
+[79/148] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj
+[80/148] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.obj
+[81/148] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj
+[82/148] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj
+[83/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io.c.obj
+[84/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ops.c.obj
+[85/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_common.c.obj
+[86/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ssd1306.c.obj
+[87/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_st7789.c.obj
+[88/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c.c.obj
+[89/148] Linking C static library esp-idf\protocomm\libprotocomm.a
+[90/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/parl/esp_lcd_panel_io_parl.c.obj
+[91/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/spi/esp_lcd_panel_io_spi.c.obj
+[92/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/dsi/esp_lcd_panel_io_dbi.c.obj
+[93/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/dsi/esp_lcd_mipi_dsi_bus.c.obj
+[94/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i80/esp_lcd_panel_io_i80.c.obj
+[95/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/dsi/esp_lcd_panel_dpi.c.obj
+[96/148] Linking C static library esp-idf\fatfs\libfatfs.a
+[97/148] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl.c.obj
+[98/148] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_handler.c.obj
+[99/148] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj
+[100/148] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
+[101/148] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_utils.c.obj
+[102/148] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_httpd.c.obj
+[103/148] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_mqueue.c.obj
+[104/148] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
+[105/148] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rgb/esp_lcd_panel_rgb.c.obj
+[106/148] Linking C static library esp-idf\needle\libneedle.a
+[107/148] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
+[108/148] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
+[109/148] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
+[110/148] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[111/148] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/es8311_p4.c.obj
+[112/148] Linking C static library esp-idf\esp_driver_gptimer\libesp_driver_gptimer.a
+[113/148] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/sd_log.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/sd_log.c.obj 
+C:\Espressif\tools\riscv32-esp-elf\esp-15.2.0_20251204\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v6.1\" -DND_PROFILE -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build/config -ID:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main -IC:/esp/v6.1/esp-idf/components/esp_libc/platform_include -IC:/esp/v6.1/esp-idf/components/freertos/config/include -IC:/esp/v6.1/esp-idf/components/freertos/config/include/freertos -IC:/esp/v6.1/esp-idf/components/freertos/config/riscv/include -IC:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -IC:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -IC:/esp/v6.1/esp-idf/components/freertos/esp_additions/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc -IC:/esp/v6.1/esp-idf/components/esp_hw_support/ldo/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/debug_probe/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/etm/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/power_supply/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/modem/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/. -IC:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/private_include -IC:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32p4/. -IC:/esp/v6.1/esp-idf/components/heap/include -IC:/esp/v6.1/esp-idf/components/heap/tlsf -IC:/esp/v6.1/esp-idf/components/log/include -IC:/esp/v6.1/esp-idf/components/soc/include -IC:/esp/v6.1/esp-idf/components/soc/esp32p4 -IC:/esp/v6.1/esp-idf/components/soc/esp32p4/include -IC:/esp/v6.1/esp-idf/components/soc/esp32p4/register/hw_ver3 -IC:/esp/v6.1/esp-idf/components/hal/platform_port/include -IC:/esp/v6.1/esp-idf/components/hal/esp32p4/include -IC:/esp/v6.1/esp-idf/components/hal/include -IC:/esp/v6.1/esp-idf/components/esp_rom/include -IC:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include/esp32p4 -IC:/esp/v6.1/esp-idf/components/esp_rom/esp32p4 -IC:/esp/v6.1/esp-idf/components/esp_common/include -IC:/esp/v6.1/esp-idf/components/esp_system/include -IC:/esp/v6.1/esp-idf/components/esp_system/port/soc -IC:/esp/v6.1/esp-idf/components/esp_system/port/include/riscv -IC:/esp/v6.1/esp-idf/components/esp_system/port/include/private -IC:/esp/v6.1/esp-idf/components/esp_stdio/include -IC:/esp/v6.1/esp-idf/components/riscv/include -IC:/esp/v6.1/esp-idf/components/esp_hal_gpio/include -IC:/esp/v6.1/esp-idf/components/esp_hal_gpio/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hal_usb/include -IC:/esp/v6.1/esp-idf/components/esp_hal_usb/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hal_pmu/include -IC:/esp/v6.1/esp-idf/components/esp_hal_pmu/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hal_regi2c/include -IC:/esp/v6.1/esp-idf/components/esp_hal_regi2c/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hal_uart/include -IC:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/include -IC:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hal_dma/include -IC:/esp/v6.1/esp-idf/components/esp_hal_dma/esp32p4/include -IC:/esp/v6.1/esp-idf/components/lwip/include -IC:/esp/v6.1/esp-idf/components/lwip/include/apps -IC:/esp/v6.1/esp-idf/components/lwip/lwip/src/include -IC:/esp/v6.1/esp-idf/components/lwip/port/include -IC:/esp/v6.1/esp-idf/components/lwip/port/freertos/include -IC:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include -IC:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/sys -ID:/ibtivia/cactus_clone/whistle-esp32/engine/include -IC:/esp/v6.1/esp-idf/components/esp_timer/include -IC:/esp/v6.1/esp-idf/components/esp_driver_i2s/include -IC:/esp/v6.1/esp-idf/components/esp_hal_i2s/include -IC:/esp/v6.1/esp-idf/components/esp_hal_i2s/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_driver_i2c/include -IC:/esp/v6.1/esp-idf/components/esp_hal_i2c/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_hal_i2c/include -IC:/esp/v6.1/esp-idf/components/esp_driver_gpio/include -IC:/esp/v6.1/esp-idf/components/esp_partition/include -IC:/esp/v6.1/esp-idf/components/esp_blockdev/include -IC:/esp/v6.1/esp-idf/components/fatfs/diskio -IC:/esp/v6.1/esp-idf/components/fatfs/src -IC:/esp/v6.1/esp-idf/components/fatfs/vfs -IC:/esp/v6.1/esp-idf/components/wear_levelling/include -IC:/esp/v6.1/esp-idf/components/sdmmc/include -IC:/esp/v6.1/esp-idf/components/esp_hal_sd/include -IC:/esp/v6.1/esp-idf/components/esp_hal_sd/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_driver_sdmmc/include -IC:/esp/v6.1/esp-idf/components/esp_driver_sdmmc/legacy/include -IC:/esp/v6.1/esp-idf/components/esp_driver_sd_intf/include -IC:/esp/v6.1/esp-idf/components/esp_driver_sdspi/include -IC:/esp/v6.1/esp-idf/components/esp_driver_spi/include -IC:/esp/v6.1/esp-idf/components/esp_pm/include -IC:/esp/v6.1/esp-idf/components/esp_hal_gpspi/include -IC:/esp/v6.1/esp-idf/components/esp_hal_gpspi/esp32p4/include -IC:/esp/v6.1/esp-idf/components/esp_driver_dma/include -IC:/esp/v6.1/esp-idf/components/vfs/include -IC:/esp/v6.1/esp-idf/components/nvs_flash/include @"D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/build/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -O2 -fmacro-prefix-map=D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4=. -fmacro-prefix-map=C:/esp/v6.1/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/sd_log.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\sd_log.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/sd_log.c.obj -c D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main/sd_log.c
+D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main/sd_log.c: In function 'sd_log_append_json':
+D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main/sd_log.c:217:9: error: format '%u' expects argument of type 'unsigned int', but argument 10 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  217 |         "{\"schema\":1,\"file\":\"%s\",\"uptime_ms\":%lld,\"lang\":\"%s\","
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+......
+  222 |         enc_ms, dec_ms, tokens, depth);
+      |         ~~~~~~
+      |         |
+      |         uint32_t {aka long unsigned int}
+D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main/sd_log.c:219:25: note: format string is defined here
+  219 |         "\"encode_ms\":%u,\"decode_ms\":%u,\"tokens\":%d,\"depth\":%d}\n",
+      |                        ~^
+      |                         |
+      |                         unsigned int
+      |                        %lu
+D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main/sd_log.c:217:9: error: format '%u' expects argument of type 'unsigned int', but argument 11 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  217 |         "{\"schema\":1,\"file\":\"%s\",\"uptime_ms\":%lld,\"lang\":\"%s\","
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+......
+  222 |         enc_ms, dec_ms, tokens, depth);
+      |                 ~~~~~~
+      |                 |
+      |                 uint32_t {aka long unsigned int}
+D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main/sd_log.c:219:42: note: format string is defined here
+  219 |         "\"encode_ms\":%u,\"decode_ms\":%u,\"tokens\":%d,\"depth\":%d}\n",
+      |                                         ~^
+      |                                          |
+      |                                          unsigned int
+      |                                         %lu
+cc1.exe: all warnings being treated as errors
+[114/148] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/audio_p4.c.obj
+D:/ibtivia/cactus_clone/whistle-esp32/esp32/whistle_p4/main/audio_p4.c:67:17: warning: 'ms_to_samples' defined but not used [-Wunused-function]
+   67 | static uint32_t ms_to_samples(uint32_t ms)
+      |                 ^~~~~~~~~~~~~
+[115/148] Linking C static library esp-idf\cmock\libcmock.a
+[116/148] Linking C static library esp-idf\driver\libdriver.a
+[117/148] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
+[118/148] Linking C static library esp-idf\esp_blockdev_util\libesp_blockdev_util.a
+[119/148] Linking C static library esp-idf\esp_driver_ana_cmpr\libesp_driver_ana_cmpr.a
+[120/148] Linking C static library esp-idf\esp_driver_i3c\libesp_driver_i3c.a
+[121/148] Linking C static library esp-idf\esp_driver_cam\libesp_driver_cam.a
+[122/148] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
+ninja: build stopped: subcommand failed.

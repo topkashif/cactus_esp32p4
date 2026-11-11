@@ -1,0 +1,1124 @@
+Command: C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 301 --decode-panic backtrace D:\ibtivia\cactus_clone\whistle-esp32\esp32\whistle_p4\build\whistle_p4.elf D:\ibtivia\cactus_clone\whistle-esp32\esp32\whistle_p4\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM8'
+ESP-ROM:esp32p4-eco7-20260109
+Build:Jan  9 2026
+rst:0x1 (POWERON),boot:0x31f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ffb60d0,len:0x1168
+load:0x4ffab2c0,len:0x10a4
+load:0x4ffadfc0,len:0x3610
+entry 0x4ffab2c0
+[0;32mI (103) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (103) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (103) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (104) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (108) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (113) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (117) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (122) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (126) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (130) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (135) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (140) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (144) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (302) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (302) esp_psram: Speed: 200MHz[0m
+[0;32mI (303) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (753) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (762) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (762) cpu_start: Pro cpu start user code[0m
+[0;32mI (762) cpu_start: cpu freq: 400000000 Hz[0m
+[0;32mI (764) app_init: Application information:[0m
+[0;32mI (768) app_init: Project name:     whistle_p4[0m
+[0;32mI (772) app_init: App version:      383e008-dirty[0m
+[0;32mI (776) app_init: Compile time:     Nov 11 2026 10:20:19[0m
+[0;32mI (781) app_init: ELF file SHA256:  e4e711d94...[0m
+[0;32mI (786) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (789) efuse_init: Min chip rev:     v3.1[0m
+[0;32mI (793) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (797) efuse_init: Chip rev:         v3.2[0m
+[0;32mI (801) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (807) heap_init: At 4FF5DDE0 len 0005D1E0 (372 KiB): RETENT_RAM[0m
+[0;32mI (813) heap_init: At 4FFBAFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (818) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (824) heap_init: At 30100288 len 00001D78 (7 KiB): SPM[0m
+[0;32mI (829) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (836) spi_flash: detected chip: gd[0m
+[0;32mI (839) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (848) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (855) sleep_clock: System sleep clock ICG setting initialization[0m
+[0;32mI (861) main_task: Started on CPU0[0m
+[0;32mI (879) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations[0m
+[0;32mI (879) main_task: Calling app_main()[0m
+[0;32mI (884) SD_HOST: src_freq_hz: 160000000[0m
+Name: 00000
+Type: SDHC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30528MB
+CSD: ver=2, sector_size=512, capacity=62521344 read_bl_len=9
+SSR: bus_width=4
+EVT sd mounted total_mb=30519 free_mb=30493
+EVT sd ready
+[0;32mI (980) es8311: ready: 16 kHz, 16-bit, analog mic, MCLK 256x[0m
+EVT audio max_sec=30 slots=3 preroll_ms=300 vad_start_db=9.0 vad_end_db=5.0
+EVT pie_dot ok sum=8832
+EVT head_in_psram bytes=2164536 ms=75
+EVT ready model=whistle depth=4 enc_layers=8 d_model=512 vocab=8199 psram_free=28100556 internal_free=381759
+
+EVT ==================================================
+EVT  LISTENING - speak; each utterance is transcribed
+EVT  max=30 s  depth=4  VAD start=9 dB above floor
+EVT ==================================================
+
+EVT speech_start floor_dbfs=-75.0 rms_dbfs=-28.4
+[0;32mI (1102) main_task: Returned from app_main()[0m
+EVT speech_end ms=660 peak_dbfs=-26.0 clipped=0
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=660 encode_ms=716 decode_ms=907 tokens=4 peak_dbfs=-26.0
+LOG rec_00002.wav
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-56.6
+EVT speech_end ms=960 peak_dbfs=-48.9 clipped=0
+[1;31mE (22315) SD_TRANS: handle_idle_state_events unhandled: 00000100 00000000[0m
+[1;31mE (27316) sdmmc_cmd: sdmmc_send_cmd_num_of_written_blocks: sdmmc_send_app_cmd returned 0x107, failed to get number of written write blocks[0m
+[1;31mE (27317) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd_num_of_written_blocks returned 0x107[0m
+[1;31mE (27325) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x800d00[0m
+[1;31mE (27333) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (27339) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (27347) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=960 encode_ms=902 decode_ms=916 tokens=4 peak_dbfs=-48.9
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.9
+EVT speech_end ms=560 peak_dbfs=-47.8 clipped=0
+[1;31mE (38795) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (38795) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (38798) sd_log: open /sdcard/rec_00004.wav failed[0m
+EVT lang en
+TXT Okay.
+EVT time audio_ms=560 encode_ms=588 decode_ms=902 tokens=4 peak_dbfs=-47.8
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.5
+EVT speech_end ms=1720 peak_dbfs=-51.5 clipped=0
+[1;31mE (44404) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (44404) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (44408) sd_log: open /sdcard/rec_00005.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.4
+EVT speech_end ms=740 peak_dbfs=-54.2 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.4
+EVT lang en
+TXT Hello, am I audible?
+EVT time audio_ms=1720 encode_ms=1611 decode_ms=1620 tokens=9 peak_dbfs=-51.5
+[1;31mE (47647) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (47652) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (47657) sd_log: open /sdcard/rec_00006.wav failed[0m
+EVT speech_end ms=1400 peak_dbfs=-54.7 clipped=0
+EVT lang en
+TXT Hello?
+EVT time audio_ms=740 encode_ms=765 decode_ms=910 tokens=4 peak_dbfs=-54.2
+[1;31mE (49340) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (49343) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (49348) sd_log: open /sdcard/rec_00007.wav failed[0m
+EVT lang en
+TXT Are you able to see my...
+EVT time audio_ms=1400 encode_ms=1324 decode_ms=1334 tokens=7 peak_dbfs=-54.7
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-56.5
+EVT speech_end ms=3240 peak_dbfs=-46.7 clipped=0
+[1;31mE (87335) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (87335) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (87338) sd_log: open /sdcard/rec_00008.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.6
+EVT speech_end ms=1300 peak_dbfs=-51.5 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.7
+EVT lang en
+TXT Hello, this is a test for the
+EVT time audio_ms=3240 encode_ms=3085 decode_ms=1829 tokens=10 peak_dbfs=-46.7
+[1;31mE (92262) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (92268) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (92273) sd_log: open /sdcard/rec_00009.wav failed[0m
+EVT speech_end ms=5060 peak_dbfs=-51.0 clipped=0
+EVT lang en
+TXT Speech detection.
+EVT time audio_ms=1300 encode_ms=1267 decode_ms=1066 tokens=5 peak_dbfs=-51.5
+[1;31mE (94614) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (94618) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (94623) sd_log: open /sdcard/rec_00010.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.6
+EVT speech_end ms=540 peak_dbfs=-58.5 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.1
+EVT speech_end ms=1080 peak_dbfs=-55.8 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.5
+EVT speech_end ms=780 peak_dbfs=-56.2 clipped=0
+EVT lang en
+TXT and I am sure if you are able to hear me or are you able to.
+EVT time audio_ms=5060 encode_ms=5004 decode_ms=2899 tokens=17 peak_dbfs=-51.0
+[1;31mE (102539) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (102545) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (102550) sd_log: open /sdcard/rec_00011.wav failed[0m
+EVT lang en
+TXT What the?
+EVT time audio_ms=1080 encode_ms=1032 decode_ms=789 tokens=3 peak_dbfs=-55.8
+[1;31mE (104380) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (104384) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (104389) sd_log: open /sdcard/rec_00012.wav failed[0m
+EVT lang en
+TXT clip back
+EVT time audio_ms=780 encode_ms=770 decode_ms=778 tokens=3 peak_dbfs=-56.2
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.2
+EVT speech_end ms=2140 peak_dbfs=-52.9 clipped=0
+[1;31mE (301715) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (301715) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (301719) sd_log: open /sdcard/rec_00013.wav failed[0m
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=2140 encode_ms=1996 decode_ms=960 tokens=4 peak_dbfs=-52.9
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.6
+EVT speech_end ms=2300 peak_dbfs=-48.7 clipped=0
+[1;31mE (309604) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (309604) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (309609) sd_log: open /sdcard/rec_00014.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.4
+EVT speech_end ms=840 peak_dbfs=-47.0 clipped=0
+EVT lang en
+TXT Hello, I'm good morning.
+EVT time audio_ms=2300 encode_ms=2143 decode_ms=1781 tokens=10 peak_dbfs=-48.7
+[1;31mE (313542) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (313547) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (313553) sd_log: open /sdcard/rec_00015.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.3
+EVT lang en
+TXT Yeah, really.
+EVT time audio_ms=840 encode_ms=849 decode_ms=1048 tokens=5 peak_dbfs=-47.0
+EVT speech_end ms=3760 peak_dbfs=-45.6 clipped=0
+[1;31mE (318844) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (318844) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (318849) sd_log: open /sdcard/rec_00016.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.7
+EVT speech_end ms=1940 peak_dbfs=-54.2 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.7
+EVT speech_end ms=500 peak_dbfs=-53.9 clipped=0
+EVT lang en
+TXT Yeah, you were just going to set this chrom right.
+EVT time audio_ms=3760 encode_ms=3566 decode_ms=2405 tokens=14 peak_dbfs=-45.6
+[1;31mE (324831) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (324837) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (324842) sd_log: open /sdcard/rec_00017.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.9
+EVT lang en
+TXT Yeah, it's good. I need a...
+EVT time audio_ms=1940 encode_ms=1849 decode_ms=2037 tokens=12 peak_dbfs=-54.2
+[1;31mE (328737) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (328742) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (328748) sd_log: open /sdcard/rec_00018.wav failed[0m
+EVT speech_end ms=1360 peak_dbfs=-51.1 clipped=0
+EVT lang en
+TXT proxy.
+EVT time audio_ms=500 encode_ms=581 decode_ms=771 tokens=3 peak_dbfs=-53.9
+[1;31mE (330108) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (330111) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (330116) sd_log: open /sdcard/rec_00019.wav failed[0m
+EVT lang en
+TXT I was searching the...
+EVT time audio_ms=1360 encode_ms=1275 decode_ms=1199 tokens=6 peak_dbfs=-51.1
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.0
+EVT speech_end ms=1960 peak_dbfs=-51.1 clipped=0
+[1;31mE (343444) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (343444) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (343449) sd_log: open /sdcard/rec_00020.wav failed[0m
+EVT lang en
+TXT Could be that some parameters are incorrect.
+EVT time audio_ms=1960 encode_ms=1852 decode_ms=1764 tokens=10 peak_dbfs=-51.1
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-56.4
+EVT speech_end ms=720 peak_dbfs=-44.9 clipped=0
+[1;31mE (348875) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (348875) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (348879) sd_log: open /sdcard/rec_00021.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.2
+EVT lang en
+TXT Okay.
+EVT time audio_ms=720 encode_ms=728 decode_ms=909 tokens=4 peak_dbfs=-44.9
+EVT speech_end ms=2380 peak_dbfs=-43.7 clipped=0
+[1;31mE (351755) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (351755) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (351759) sd_log: open /sdcard/rec_00022.wav failed[0m
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-58.4
+EVT speech_end ms=1720 peak_dbfs=-46.4 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.3
+EVT lang en
+TXT So do you have something?
+EVT time audio_ms=2380 encode_ms=2209 decode_ms=1242 tokens=6 peak_dbfs=-43.7
+[1;31mE (355219) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (355224) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (355229) sd_log: open /sdcard/rec_00023.wav failed[0m
+EVT speech_end ms=4120 peak_dbfs=-44.2 clipped=0
+EVT lang nl
+TXT Want ik lekker hoop.
+EVT time audio_ms=1720 encode_ms=1612 decode_ms=1620 tokens=9 peak_dbfs=-46.4
+[1;31mE (358470) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (358475) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (358480) sd_log: open /sdcard/rec_00024.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.0
+EVT speech_end ms=800 peak_dbfs=-56.5 clipped=0
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-62.2
+EVT lang en
+TXT what you are going to write something into the IPC or write in the proxy.
+EVT time audio_ms=4120 encode_ms=3972 decode_ms=2988 tokens=18 peak_dbfs=-44.2
+[1;31mE (365454) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (365460) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (365465) sd_log: open /sdcard/rec_00025.wav failed[0m
+EVT speech_end ms=4980 peak_dbfs=-44.4 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.9
+EVT lang en
+TXT Yeah, I'm ready.
+EVT time audio_ms=800 encode_ms=776 decode_ms=1443 tokens=8 peak_dbfs=-56.5
+[1;31mE (367692) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (367696) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (367701) sd_log: open /sdcard/rec_00026.wav failed[0m
+EVT speech_end ms=4220 peak_dbfs=-46.4 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.0
+EVT speech_end ms=740 peak_dbfs=-49.3 clipped=0
+EVT lang en
+TXT Okay, so you can't hear what to me, maybe you can't use what to me.
+EVT time audio_ms=4980 encode_ms=4915 decode_ms=3891 tokens=24 peak_dbfs=-44.4
+[1;31mE (376522) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (376528) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (376533) sd_log: open /sdcard/rec_00027.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.7
+EVT speech_end ms=1380 peak_dbfs=-50.1 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.8
+EVT speech_end ms=540 peak_dbfs=-45.6 clipped=0
+EVT lang en
+TXT So what I was doing was that let's say I found
+EVT time audio_ms=4220 encode_ms=4061 decode_ms=2294 tokens=13 peak_dbfs=-46.4
+[1;31mE (382900) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (382906) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (382911) sd_log: open /sdcard/rec_00028.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.1
+EVT speech_end ms=600 peak_dbfs=-47.4 clipped=0
+EVT lang en
+TXT Uh-huh.
+EVT time audio_ms=1380 encode_ms=1321 decode_ms=1204 tokens=6 peak_dbfs=-50.1
+[1;31mE (385445) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (385449) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (385454) sd_log: open /sdcard/rec_00029.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.5
+EVT lang en
+TXT Yeah.
+EVT time audio_ms=540 encode_ms=589 decode_ms=772 tokens=3 peak_dbfs=-45.6
+[1;31mE (386823) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (386826) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (386831) sd_log: open /sdcard/rec_00030.wav failed[0m
+EVT lang en
+TXT I'm gonna do shit.
+EVT time audio_ms=600 encode_ms=631 decode_ms=1702 tokens=10 peak_dbfs=-47.4
+EVT speech_end ms=3060 peak_dbfs=-42.5 clipped=0
+[1;31mE (389855) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (389855) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (389859) sd_log: open /sdcard/rec_00031.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-56.5
+EVT speech_end ms=600 peak_dbfs=-43.0 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.2
+EVT speech_end ms=1900 peak_dbfs=-44.1 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.5
+EVT speech_end ms=1880 peak_dbfs=-43.9 clipped=0
+EVT lang en
+TXT Some facts are the little music. That's where it is coming in.
+EVT time audio_ms=3060 encode_ms=2913 decode_ms=2786 tokens=17 peak_dbfs=-42.5
+[1;31mE (395571) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (395577) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (395582) sd_log: open /sdcard/rec_00032.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.9
+EVT speech_end ms=960 peak_dbfs=-47.6 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.9
+EVT lang en
+TXT Maybe you update it.
+EVT time audio_ms=1900 encode_ms=1758 decode_ms=1358 tokens=7 peak_dbfs=-44.1
+[1;31mE (398707) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (398712) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (398717) sd_log: open /sdcard/rec_00033.wav failed[0m
+EVT speech_end ms=2620 peak_dbfs=-49.2 clipped=0
+EVT lang en
+TXT to bring God.
+EVT time audio_ms=960 encode_ms=904 decode_ms=918 tokens=4 peak_dbfs=-47.6
+[1;31mE (400547) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (400550) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (400556) sd_log: open /sdcard/rec_00034.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.1
+EVT speech_end ms=880 peak_dbfs=-54.3 clipped=0
+EVT lang en
+TXT No, I've kept it as this.
+EVT time audio_ms=2620 encode_ms=2457 decode_ms=1932 tokens=11 peak_dbfs=-49.2
+[1;31mE (404955) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (404960) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (404965) sd_log: open /sdcard/rec_00035.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.5
+EVT lang en
+TXT This was not looking.
+EVT time audio_ms=880 encode_ms=854 decode_ms=1048 tokens=5 peak_dbfs=-54.3
+EVT speech_end ms=6300 peak_dbfs=-42.7 clipped=0
+[1;31mE (412055) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (412055) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (412059) sd_log: open /sdcard/rec_00036.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.3
+EVT speech_end ms=6160 peak_dbfs=-39.8 clipped=0
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-59.9
+EVT lang en
+TXT Okay, maybe it's which clusters this is the very
+EVT time audio_ms=6300 encode_ms=6432 decode_ms=2841 tokens=16 peak_dbfs=-42.7
+[1;31mE (421346) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (421351) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (421357) sd_log: open /sdcard/rec_00037.wav failed[0m
+EVT speech_end ms=8260 peak_dbfs=-47.6 clipped=0
+EVT lang en
+TXT Okay, you need a liquid and that boxy value or like...
+EVT time audio_ms=6160 encode_ms=6241 decode_ms=2974 tokens=17 peak_dbfs=-39.8
+[1;31mE (430585) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (430591) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (430596) sd_log: open /sdcard/rec_00038.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.0
+EVT speech_end ms=4420 peak_dbfs=-47.0 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.8
+EVT speech_end ms=2620 peak_dbfs=-43.6 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.5
+EVT lang en
+TXT space some specific proxy so i only have canoe so i need uh the complete proxy value
+EVT time audio_ms=8260 encode_ms=8948 decode_ms=3835 tokens=22 peak_dbfs=-47.6
+[1;31mE (443397) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (443403) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (443408) sd_log: open /sdcard/rec_00039.wav failed[0m
+EVT speech_end ms=1380 peak_dbfs=-54.7 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.7
+EVT speech_end ms=1000 peak_dbfs=-54.5 clipped=0
+EVT lang en
+TXT Not some, I have one or two.
+EVT time audio_ms=2620 encode_ms=2459 decode_ms=1797 tokens=10 peak_dbfs=-43.6
+[1;31mE (447673) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (447679) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (447684) sd_log: open /sdcard/rec_00040.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-62.3
+EVT speech_end ms=1220 peak_dbfs=-51.1 clipped=0
+EVT lang en
+TXT What do you see that?
+EVT time audio_ms=1380 encode_ms=1321 decode_ms=1205 tokens=6 peak_dbfs=-54.7
+[1;31mE (450219) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (450223) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (450228) sd_log: open /sdcard/rec_00041.wav failed[0m
+EVT lang en
+TXT spot
+EVT time audio_ms=1000 encode_ms=980 decode_ms=523 tokens=1 peak_dbfs=-54.5
+[1;31mE (451740) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (451743) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (451748) sd_log: open /sdcard/rec_00042.wav failed[0m
+EVT lang en
+TXT 4007
+EVT time audio_ms=1220 encode_ms=1163 decode_ms=795 tokens=3 peak_dbfs=-51.1
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.6
+EVT speech_end ms=2100 peak_dbfs=-53.5 clipped=0
+[1;31mE (458315) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (458315) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (458319) sd_log: open /sdcard/rec_00043.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-62.9
+EVT speech_end ms=2840 peak_dbfs=-50.6 clipped=0
+EVT lang en
+TXT 237 and 238.
+EVT time audio_ms=2100 encode_ms=1990 decode_ms=1367 tokens=7 peak_dbfs=-53.5
+[1;31mE (461684) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (461688) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (461693) sd_log: open /sdcard/rec_00044.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.0
+EVT speech_end ms=1640 peak_dbfs=-47.1 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-57.6
+EVT speech_end ms=1040 peak_dbfs=-44.7 clipped=0
+EVT lang en
+TXT I think for euro 7, this value should be 130.
+EVT time audio_ms=2840 encode_ms=2678 decode_ms=2358 tokens=14 peak_dbfs=-50.6
+[1;31mE (466740) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (466745) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (466751) sd_log: open /sdcard/rec_00045.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.5
+EVT lang en
+TXT Sure, don't...
+EVT time audio_ms=1640 encode_ms=1548 decode_ms=1348 tokens=7 peak_dbfs=-47.1
+[1;31mE (469656) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (469660) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (469665) sd_log: open /sdcard/rec_00046.wav failed[0m
+EVT lang en
+TXT Got you, everyone.
+EVT time audio_ms=1040 encode_ms=984 decode_ms=1187 tokens=6 peak_dbfs=-44.7
+EVT speech_end ms=5320 peak_dbfs=-42.9 clipped=0
+[1;31mE (472655) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (472655) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (472659) sd_log: open /sdcard/rec_00047.wav failed[0m
+EVT speech_start floor_dbfs=-74.7 rms_dbfs=-64.2
+EVT speech_end ms=2320 peak_dbfs=-45.5 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.8
+EVT speech_end ms=2860 peak_dbfs=-44.8 clipped=0
+EVT lang en
+TXT I don't have anything related because I have a general proxy.
+EVT time audio_ms=5320 encode_ms=5326 decode_ms=2642 tokens=15 peak_dbfs=-42.9
+[1;31mE (480641) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (480647) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (480652) sd_log: open /sdcard/rec_00048.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-62.4
+EVT speech_end ms=1260 peak_dbfs=-53.5 clipped=0
+EVT lang en
+TXT 4 to perfect, actually.
+EVT time audio_ms=2320 encode_ms=2149 decode_ms=1239 tokens=6 peak_dbfs=-45.5
+[1;31mE (484049) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (484054) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (484059) sd_log: open /sdcard/rec_00049.wav failed[0m
+EVT lang en
+TXT So I can share it at no problem.
+EVT time audio_ms=2860 encode_ms=2678 decode_ms=1671 tokens=9 peak_dbfs=-44.8
+[1;31mE (488418) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (488424) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (488429) sd_log: open /sdcard/rec_00050.wav failed[0m
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-63.6
+EVT lang en
+TXT for them.
+EVT time audio_ms=1260 encode_ms=1171 decode_ms=796 tokens=3 peak_dbfs=-53.5
+EVT speech_end ms=1680 peak_dbfs=-50.1 clipped=0
+[1;31mE (490924) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (490924) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (490929) sd_log: open /sdcard/rec_00051.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.5
+EVT speech_end ms=1480 peak_dbfs=-43.2 clipped=0
+EVT lang en
+TXT Just a minute I think.
+EVT time audio_ms=1680 encode_ms=1552 decode_ms=1347 tokens=7 peak_dbfs=-50.1
+[1;31mE (493837) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (493841) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (493847) sd_log: open /sdcard/rec_00052.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.1
+EVT lang en
+TXT See some value?
+EVT time audio_ms=1480 encode_ms=1410 decode_ms=1072 tokens=5 peak_dbfs=-43.2
+EVT speech_end ms=3600 peak_dbfs=-43.7 clipped=0
+[1;31mE (499715) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (499715) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (499719) sd_log: open /sdcard/rec_00053.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.2
+EVT speech_end ms=1660 peak_dbfs=-46.6 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.6
+EVT speech_end ms=560 peak_dbfs=-55.2 clipped=0
+EVT lang en
+TXT Actually, this is like the end-term command, okay, but I'm going to share it.
+EVT time audio_ms=3600 encode_ms=3405 decode_ms=3921 tokens=25 peak_dbfs=-43.7
+[1;31mE (507059) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (507065) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (507070) sd_log: open /sdcard/rec_00054.wav failed[0m
+EVT lang en
+TXT He's in a dark comber.
+EVT time audio_ms=1660 encode_ms=1549 decode_ms=1614 tokens=9 peak_dbfs=-46.6
+[1;31mE (510242) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (510247) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (510252) sd_log: open /sdcard/rec_00055.wav failed[0m
+EVT lang en
+TXT So...
+EVT time audio_ms=560 encode_ms=589 decode_ms=639 tokens=2 peak_dbfs=-55.2
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.9
+EVT speech_end ms=3500 peak_dbfs=-44.5 clipped=0
+[1;31mE (515675) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (515675) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (515679) sd_log: open /sdcard/rec_00056.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.1
+EVT speech_end ms=2080 peak_dbfs=-47.8 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.9
+EVT lang en
+TXT multiplying control with this this is one one proxy value
+EVT time audio_ms=3500 encode_ms=3315 decode_ms=2393 tokens=14 peak_dbfs=-44.5
+[1;31mE (521399) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (521404) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (521409) sd_log: open /sdcard/rec_00057.wav failed[0m
+EVT speech_end ms=1280 peak_dbfs=-44.8 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.8
+EVT speech_end ms=700 peak_dbfs=-45.9 clipped=0
+EVT lang en
+TXT This is so...
+EVT time audio_ms=2080 encode_ms=1918 decode_ms=958 tokens=4 peak_dbfs=-47.8
+[1;31mE (524294) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (524298) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (524304) sd_log: open /sdcard/rec_00058.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.0
+EVT lang en
+TXT I'm not that proxy.
+EVT time audio_ms=1280 encode_ms=1174 decode_ms=1462 tokens=8 peak_dbfs=-44.8
+[1;31mE (526947) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (526952) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (526957) sd_log: open /sdcard/rec_00059.wav failed[0m
+EVT lang en
+TXT Thank you.
+EVT time audio_ms=700 encode_ms=724 decode_ms=909 tokens=4 peak_dbfs=-45.9
+EVT speech_end ms=1760 peak_dbfs=-43.6 clipped=0
+[1;31mE (528604) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (528606) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (528611) sd_log: open /sdcard/rec_00060.wav failed[0m
+EVT lang en
+TXT Maybe we can try with these values.
+EVT time audio_ms=1760 encode_ms=1610 decode_ms=1754 tokens=10 peak_dbfs=-43.6
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.0
+EVT speech_end ms=700 peak_dbfs=-47.4 clipped=0
+[1;31mE (538655) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (538655) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (538658) sd_log: open /sdcard/rec_00061.wav failed[0m
+EVT lang en
+TXT Have a good one.
+EVT time audio_ms=700 encode_ms=722 decode_ms=1173 tokens=6 peak_dbfs=-47.4
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.0
+EVT speech_end ms=3500 peak_dbfs=-43.3 clipped=0
+[1;31mE (558395) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (558395) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (558399) sd_log: open /sdcard/rec_00062.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.4
+EVT speech_end ms=800 peak_dbfs=-46.8 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.6
+EVT speech_end ms=1360 peak_dbfs=-45.3 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.0
+EVT lang en
+TXT But I don't think you have that initial oblation labeled.
+EVT time audio_ms=3500 encode_ms=3315 decode_ms=2532 tokens=15 peak_dbfs=-43.3
+[1;31mE (564258) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (564264) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (564269) sd_log: open /sdcard/rec_00063.wav failed[0m
+EVT speech_end ms=2280 peak_dbfs=-44.5 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.1
+EVT lang en
+TXT You can then approve tender.
+EVT time audio_ms=1360 encode_ms=1275 decode_ms=1469 tokens=8 peak_dbfs=-45.3
+[1;31mE (567022) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (567027) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (567032) sd_log: open /sdcard/rec_00064.wav failed[0m
+EVT speech_end ms=1760 peak_dbfs=-44.8 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.8
+EVT lang en
+TXT But if you enable my thing,
+EVT time audio_ms=2280 encode_ms=2143 decode_ms=1375 tokens=7 peak_dbfs=-44.5
+[1;31mE (570559) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (570564) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (570569) sd_log: open /sdcard/rec_00065.wav failed[0m
+EVT speech_end ms=5580 peak_dbfs=-42.6 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.7
+EVT lang es
+TXT El minuto es obticol, si ha sido.
+EVT time audio_ms=1760 encode_ms=1612 decode_ms=2704 tokens=17 peak_dbfs=-44.8
+[1;31mE (574893) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (574899) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (574904) sd_log: open /sdcard/rec_00066.wav failed[0m
+EVT speech_end ms=920 peak_dbfs=-49.4 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.0
+EVT speech_end ms=760 peak_dbfs=-51.4 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.9
+EVT speech_end ms=3400 peak_dbfs=-47.0 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.0
+EVT lang en
+TXT proxy. So if you ending Q&A, disable or change any value in the proxy.
+EVT time audio_ms=5580 encode_ms=5599 decode_ms=3653 tokens=22 peak_dbfs=-42.6
+[1;31mE (584171) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (584177) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (584182) sd_log: open /sdcard/rec_00067.wav failed[0m
+EVT speech_end ms=3700 peak_dbfs=-42.8 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.7
+EVT speech_end ms=2740 peak_dbfs=-45.1 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.7
+EVT lang en
+TXT Other parameters also need to align.
+EVT time audio_ms=3400 encode_ms=3247 decode_ms=1562 tokens=8 peak_dbfs=-47.0
+[1;31mE (589001) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (589007) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (589012) sd_log: open /sdcard/rec_00068.wav failed[0m
+EVT speech_end ms=4160 peak_dbfs=-43.8 clipped=0
+EVT lang en
+TXT the first and the future you go to the
+EVT time audio_ms=2740 encode_ms=2610 decode_ms=1670 tokens=9 peak_dbfs=-45.1
+[1;31mE (593302) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (593307) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (593313) sd_log: open /sdcard/rec_00069.wav failed[0m
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-62.7
+EVT lang en
+TXT proxy shoot so the first 11 biceps is located off the yarse
+EVT time audio_ms=4160 encode_ms=3980 decode_ms=2990 tokens=18 peak_dbfs=-43.8
+EVT speech_end ms=8020 peak_dbfs=-44.5 clipped=0
+[1;31mE (601564) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (601564) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (601569) sd_log: open /sdcard/rec_00070.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.5
+EVT speech_end ms=7540 peak_dbfs=-41.5 clipped=0
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-59.5
+EVT speech_end ms=780 peak_dbfs=-47.6 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.3
+EVT lang en
+TXT So it's calculated to install the other actions, proxy values, other types.
+EVT time audio_ms=8020 encode_ms=8622 decode_ms=3377 tokens=19 peak_dbfs=-44.5
+[1;31mE (613585) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (613591) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (613596) sd_log: open /sdcard/rec_00071.wav failed[0m
+EVT lang en
+TXT Yeah.
+EVT time audio_ms=780 encode_ms=773 decode_ms=780 tokens=3 peak_dbfs=-47.6
+EVT speech_end ms=3280 peak_dbfs=-41.9 clipped=0
+[1;31mE (616355) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (616355) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (616359) sd_log: open /sdcard/rec_00072.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.5
+EVT speech_end ms=2700 peak_dbfs=-42.7 clipped=0
+EVT lang en
+TXT So that's why I bet I do use watermelon.
+EVT time audio_ms=3280 encode_ms=3094 decode_ms=2377 tokens=14 peak_dbfs=-41.9
+[1;31mE (621841) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (621847) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (621852) sd_log: open /sdcard/rec_00073.wav failed[0m
+EVT lang en
+TXT Because you can change it to a proxy in the bottom of it.
+EVT time audio_ms=2700 encode_ms=2521 decode_ms=2893 tokens=18 peak_dbfs=-42.7
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.5
+EVT speech_end ms=2340 peak_dbfs=-45.4 clipped=0
+[1;31mE (637895) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (637895) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (637899) sd_log: open /sdcard/rec_00074.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.2
+EVT lang en
+TXT This is fine for you. This is I think most two of them.
+EVT time audio_ms=2340 encode_ms=2197 decode_ms=2467 tokens=15 peak_dbfs=-45.4
+EVT speech_end ms=4240 peak_dbfs=-42.3 clipped=0
+[1;31mE (644644) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (644644) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (644649) sd_log: open /sdcard/rec_00075.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.3
+EVT speech_end ms=680 peak_dbfs=-43.1 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.8
+EVT speech_end ms=520 peak_dbfs=-48.9 clipped=0
+EVT lang en
+TXT I'm going to go to Sandra and I'm going to be stopped.
+EVT time audio_ms=4240 encode_ms=4067 decode_ms=3273 tokens=20 peak_dbfs=-42.3
+[1;31mE (652001) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (652006) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (652012) sd_log: open /sdcard/rec_00076.wav failed[0m
+EVT lang en
+TXT Yeah.
+EVT time audio_ms=680 encode_ms=721 decode_ms=777 tokens=3 peak_dbfs=-43.1
+[1;31mE (653518) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (653520) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (653526) sd_log: open /sdcard/rec_00077.wav failed[0m
+EVT lang en
+TXT Okay.
+EVT time audio_ms=520 encode_ms=582 decode_ms=902 tokens=4 peak_dbfs=-48.9
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.5
+EVT speech_end ms=4680 peak_dbfs=-46.5 clipped=0
+[1;31mE (660395) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (660395) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (660399) sd_log: open /sdcard/rec_00078.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.0
+EVT speech_end ms=4380 peak_dbfs=-42.2 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.8
+EVT lang en
+TXT Sure, sure. So you'll be sharing this.
+EVT time audio_ms=4680 encode_ms=4579 decode_ms=2319 tokens=13 peak_dbfs=-46.5
+[1;31mE (667308) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (667314) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (667319) sd_log: open /sdcard/rec_00079.wav failed[0m
+EVT speech_end ms=6100 peak_dbfs=-47.4 clipped=0
+EVT lang en
+TXT Did you just write two there? I like what is the exact thing?
+EVT time audio_ms=4380 encode_ms=4233 decode_ms=2722 tokens=16 peak_dbfs=-42.2
+[1;31mE (674288) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (674293) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (674299) sd_log: open /sdcard/rec_00080.wav failed[0m
+EVT lang en
+TXT you're approach to this like so what you're contemporaneous in main thing is that
+EVT time audio_ms=6100 encode_ms=6234 decode_ms=3832 tokens=23 peak_dbfs=-47.4
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.5
+EVT speech_end ms=2680 peak_dbfs=-52.8 clipped=0
+[1;31mE (688264) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (688264) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (688269) sd_log: open /sdcard/rec_00081.wav failed[0m
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-60.5
+EVT lang en
+TXT So if that key slot is active, let me
+EVT time audio_ms=2680 encode_ms=2523 decode_ms=1802 tokens=10 peak_dbfs=-52.8
+EVT speech_end ms=1240 peak_dbfs=-49.6 clipped=0
+[1;31mE (692764) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (692764) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (692769) sd_log: open /sdcard/rec_00082.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.5
+EVT lang en
+TXT So there are some flags.
+EVT time audio_ms=1240 encode_ms=1167 decode_ms=1330 tokens=7 peak_dbfs=-49.6
+EVT speech_end ms=2280 peak_dbfs=-52.0 clipped=0
+[1;31mE (696455) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (696455) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (696459) sd_log: open /sdcard/rec_00083.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.9
+EVT lang en
+TXT We will have the key of data and write prediction.
+EVT time audio_ms=2280 encode_ms=2140 decode_ms=2054 tokens=12 peak_dbfs=-52.0
+EVT speech_end ms=2980 peak_dbfs=-55.8 clipped=0
+[1;31mE (701255) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (701255) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (701259) sd_log: open /sdcard/rec_00084.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.4
+EVT speech_end ms=2180 peak_dbfs=-52.6 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.6
+EVT lang en
+TXT 27 is 07 proxies right now.
+EVT time audio_ms=2980 encode_ms=2833 decode_ms=1955 tokens=11 peak_dbfs=-55.8
+[1;31mE (706056) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (706061) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (706066) sd_log: open /sdcard/rec_00085.wav failed[0m
+EVT speech_end ms=1280 peak_dbfs=-51.5 clipped=0
+EVT lang en
+TXT what the proxy is supposed
+EVT time audio_ms=2180 encode_ms=2055 decode_ms=1370 tokens=7 peak_dbfs=-52.6
+[1;31mE (709500) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (709505) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (709510) sd_log: open /sdcard/rec_00086.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.3
+EVT lang en
+TXT So I have also modified.
+EVT time audio_ms=1280 encode_ms=1175 decode_ms=1330 tokens=7 peak_dbfs=-51.5
+EVT speech_end ms=960 peak_dbfs=-55.5 clipped=0
+[1;31mE (712924) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (712924) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (712928) sd_log: open /sdcard/rec_00087.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.6
+EVT speech_end ms=900 peak_dbfs=-53.0 clipped=0
+EVT lang en
+TXT I call this checks.
+EVT time audio_ms=960 encode_ms=904 decode_ms=1185 tokens=6 peak_dbfs=-55.5
+[1;31mE (715026) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (715030) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (715035) sd_log: open /sdcard/rec_00088.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.6
+EVT lang en
+TXT He's gonna be able to
+EVT time audio_ms=900 encode_ms=895 decode_ms=1585 tokens=9 peak_dbfs=-53.0
+EVT speech_end ms=1880 peak_dbfs=-53.0 clipped=0
+[1;31mE (717935) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (717935) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (717939) sd_log: open /sdcard/rec_00089.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.0
+EVT lang en
+TXT call the security functions to
+EVT time audio_ms=1880 encode_ms=1755 decode_ms=1088 tokens=5 peak_dbfs=-53.0
+EVT speech_end ms=1040 peak_dbfs=-51.5 clipped=0
+[1;31mE (720995) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (720995) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (720999) sd_log: open /sdcard/rec_00090.wav failed[0m
+EVT lang en
+TXT enable that keys
+EVT time audio_ms=1040 encode_ms=985 decode_ms=1054 tokens=5 peak_dbfs=-51.5
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.8
+EVT speech_end ms=2140 peak_dbfs=-51.8 clipped=0
+[1;31mE (725495) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (725495) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (725499) sd_log: open /sdcard/rec_00091.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.2
+EVT speech_end ms=2160 peak_dbfs=-53.5 clipped=0
+EVT lang en
+TXT So let's say if I flash 07 proxy.
+EVT time audio_ms=2140 encode_ms=1996 decode_ms=2318 tokens=14 peak_dbfs=-51.8
+[1;31mE (729822) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (729828) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (729833) sd_log: open /sdcard/rec_00092.wav failed[0m
+EVT speech_start floor_dbfs=-74.7 rms_dbfs=-58.5
+EVT lang en
+TXT It will check that 230 abight.
+EVT time audio_ms=2160 encode_ms=2000 decode_ms=1640 tokens=9 peak_dbfs=-53.5
+EVT speech_end ms=2460 peak_dbfs=-47.2 clipped=0
+[1;31mE (733835) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (733835) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (733839) sd_log: open /sdcard/rec_00093.wav failed[0m
+EVT lang en
+TXT And the moment it is flushed, it will...
+EVT time audio_ms=2460 encode_ms=2293 decode_ms=2061 tokens=12 peak_dbfs=-47.2
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.1
+EVT speech_end ms=4360 peak_dbfs=-48.1 clipped=0
+[1;31mE (746464) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (746464) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (746469) sd_log: open /sdcard/rec_00094.wav failed[0m
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-62.6
+EVT speech_end ms=600 peak_dbfs=-49.6 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.4
+EVT speech_end ms=780 peak_dbfs=-56.2 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.0
+EVT lang en
+TXT So it will enable the flag for right protection.
+EVT time audio_ms=4360 encode_ms=4223 decode_ms=2024 tokens=11 peak_dbfs=-48.1
+[1;31mE (752727) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (752733) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (752738) sd_log: open /sdcard/rec_00095.wav failed[0m
+EVT lang en
+TXT So...
+EVT time audio_ms=780 encode_ms=772 decode_ms=647 tokens=2 peak_dbfs=-56.2
+EVT speech_end ms=3400 peak_dbfs=-47.7 clipped=0
+[1;31mE (754835) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (754835) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (754839) sd_log: open /sdcard/rec_00096.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.9
+EVT speech_end ms=1340 peak_dbfs=-51.0 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.8
+EVT speech_end ms=780 peak_dbfs=-52.1 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.2
+EVT lang en
+TXT Once that is active, that check is being made by.
+EVT time audio_ms=3400 encode_ms=3242 decode_ms=2252 tokens=13 peak_dbfs=-47.7
+[1;31mE (760345) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (760351) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (760356) sd_log: open /sdcard/rec_00097.wav failed[0m
+EVT lang en
+TXT The proxy group.
+EVT time audio_ms=780 encode_ms=771 decode_ms=1045 tokens=5 peak_dbfs=-52.1
+EVT speech_end ms=3720 peak_dbfs=-45.2 clipped=0
+[1;31mE (763055) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (763055) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (763059) sd_log: open /sdcard/rec_00098.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.4
+EVT lang en
+TXT Then it will go and check the key slot, please leave.
+EVT time audio_ms=3720 encode_ms=3558 decode_ms=2407 tokens=14 peak_dbfs=-45.2
+EVT speech_end ms=8260 peak_dbfs=-42.4 clipped=0
+[1;31mE (771575) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (771575) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (771579) sd_log: open /sdcard/rec_00099.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.8
+EVT speech_end ms=4460 peak_dbfs=-46.7 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.2
+EVT speech_end ms=1260 peak_dbfs=-57.4 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-61.7
+EVT speech_end ms=1240 peak_dbfs=-43.9 clipped=0
+EVT lang en
+TXT If then, please go to this active one. For all that, to a functionality, maybe the chicking the status of the key slot, we have so any appass or something like that.
+EVT time audio_ms=8260 encode_ms=8944 decode_ms=6794 tokens=42 peak_dbfs=-42.4
+[1;31mE (787341) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (787347) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (787352) sd_log: open /sdcard/rec_00100.wav failed[0m
+EVT lang en
+TXT This is some generative.
+EVT time audio_ms=1260 encode_ms=1172 decode_ms=1195 tokens=6 peak_dbfs=-57.4
+[1;31mE (789727) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (789732) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (789737) sd_log: open /sdcard/rec_00101.wav failed[0m
+EVT lang en
+TXT Get function.
+EVT time audio_ms=1240 encode_ms=1167 decode_ms=796 tokens=3 peak_dbfs=-43.9
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-54.4
+EVT speech_end ms=3220 peak_dbfs=-45.2 clipped=0
+[1;31mE (796504) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (796504) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (796509) sd_log: open /sdcard/rec_00102.wav failed[0m
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-62.9
+EVT speech_end ms=1480 peak_dbfs=-51.7 clipped=0
+EVT lang en
+TXT So you modify this proxy right also.
+EVT time audio_ms=3220 encode_ms=3080 decode_ms=1829 tokens=10 peak_dbfs=-45.2
+[1;31mE (801428) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (801434) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (801439) sd_log: open /sdcard/rec_00103.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.4
+EVT lang en
+TXT Yes, just two test out.
+EVT time audio_ms=1480 encode_ms=1410 decode_ms=1340 tokens=7 peak_dbfs=-51.7
+EVT speech_end ms=3280 peak_dbfs=-49.6 clipped=0
+[1;31mE (807095) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (807095) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (807099) sd_log: open /sdcard/rec_00104.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-62.2
+EVT speech_end ms=3920 peak_dbfs=-47.6 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-56.9
+EVT lang en
+TXT Yeah, so some of your information is also covered.
+EVT time audio_ms=3280 encode_ms=3091 decode_ms=2105 tokens=12 peak_dbfs=-49.6
+[1;31mE (812306) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (812311) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (812317) sd_log: open /sdcard/rec_00105.wav failed[0m
+EVT speech_end ms=1220 peak_dbfs=-44.6 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.8
+EVT speech_end ms=2940 peak_dbfs=-46.1 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.0
+EVT lang en
+TXT as part of like this answer. Yeah, I can follow you then if this works.
+EVT time audio_ms=3920 encode_ms=3741 decode_ms=3114 tokens=19 peak_dbfs=-47.6
+[1;31mE (819185) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (819191) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (819196) sd_log: open /sdcard/rec_00106.wav failed[0m
+EVT speech_end ms=5100 peak_dbfs=-42.7 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.1
+EVT lang en
+TXT And one more thing you have, like if you are, like...
+EVT time audio_ms=2940 encode_ms=2767 decode_ms=2366 tokens=14 peak_dbfs=-46.1
+[1;31mE (824341) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (824346) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (824352) sd_log: open /sdcard/rec_00107.wav failed[0m
+EVT speech_end ms=4900 peak_dbfs=-43.4 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.3
+EVT speech_end ms=1720 peak_dbfs=-43.0 clipped=0
+EVT lang en
+TXT Actually, there is about APA, Poyaks and Tukatheid, Arctak.
+EVT time audio_ms=5100 encode_ms=5008 decode_ms=4038 tokens=25 peak_dbfs=-42.7
+[1;31mE (833411) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (833417) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (833422) sd_log: open /sdcard/rec_00108.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-56.8
+EVT speech_end ms=3920 peak_dbfs=-42.7 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-62.2
+EVT lang en
+TXT I missed it on question time if you can use. I mean, if you have some good challenges, paramitrus.
+EVT time audio_ms=4900 encode_ms=4823 decode_ms=4455 tokens=28 peak_dbfs=-43.4
+[1;31mE (842716) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (842722) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (842727) sd_log: open /sdcard/rec_00109.wav failed[0m
+EVT speech_end ms=3040 peak_dbfs=-44.6 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.9
+EVT speech_end ms=3940 peak_dbfs=-42.1 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.1
+EVT lang en
+TXT It's a meaning like whenever you are writing the proxy.
+EVT time audio_ms=3920 encode_ms=3738 decode_ms=2555 tokens=15 peak_dbfs=-42.7
+[1;31mE (849034) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (849039) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (849045) sd_log: open /sdcard/rec_00110.wav failed[0m
+EVT speech_end ms=5720 peak_dbfs=-43.8 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.4
+EVT speech_end ms=920 peak_dbfs=-45.3 clipped=0
+EVT lang en
+TXT at the image of a glassy type byte.
+EVT time audio_ms=3940 encode_ms=3806 decode_ms=2003 tokens=11 peak_dbfs=-42.1
+[1;31mE (854865) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (854871) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (854876) sd_log: open /sdcard/rec_00111.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.9
+EVT speech_end ms=1060 peak_dbfs=-50.9 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-61.8
+EVT speech_end ms=2820 peak_dbfs=-43.9 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-57.9
+EVT speech_end ms=1980 peak_dbfs=-44.9 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-57.4
+EVT lang en
+TXT Maybe you can use some on API called pR, some kit generic parameter that is in order to end the.
+EVT time audio_ms=5720 encode_ms=5778 decode_ms=4380 tokens=27 peak_dbfs=-43.8
+[1;31mE (865052) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (865057) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (865063) sd_log: open /sdcard/rec_00112.wav failed[0m
+EVT lang en
+TXT You are using if nothing.
+EVT time audio_ms=1980 encode_ms=1855 decode_ms=1226 tokens=6 peak_dbfs=-44.9
+EVT speech_end ms=3920 peak_dbfs=-44.8 clipped=0
+[1;31mE (868864) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (868864) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (868869) sd_log: open /sdcard/rec_00113.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.2
+EVT speech_end ms=3060 peak_dbfs=-44.0 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-62.7
+EVT lang en
+TXT I mean, it's maybe like not now as.
+EVT time audio_ms=3920 encode_ms=3740 decode_ms=2137 tokens=12 peak_dbfs=-44.8
+[1;31mE (874757) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (874762) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (874768) sd_log: open /sdcard/rec_00114.wav failed[0m
+EVT lang en
+TXT Currently, but maybe in the future the...
+EVT time audio_ms=3060 encode_ms=2912 decode_ms=1958 tokens=11 peak_dbfs=-44.0
+EVT speech_end ms=7560 peak_dbfs=-41.4 clipped=0
+[1;31mE (879904) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (879904) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (879909) sd_log: open /sdcard/rec_00115.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-59.3
+EVT speech_end ms=3840 peak_dbfs=-43.2 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-56.7
+EVT speech_end ms=6200 peak_dbfs=-44.1 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.0
+EVT speech_end ms=2340 peak_dbfs=-50.5 clipped=0
+EVT lang en
+TXT which is it could not be through the different way, maybe they can be changed. I don't know, like another person that to them on change, but if they change.
+EVT time audio_ms=7560 encode_ms=8009 decode_ms=6132 tokens=38 peak_dbfs=-41.4
+[1;31mE (894074) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (894080) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (894085) sd_log: open /sdcard/rec_00116.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-55.8
+EVT speech_end ms=980 peak_dbfs=-46.6 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.1
+EVT speech_end ms=1180 peak_dbfs=-45.4 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.8 rms_dbfs=-57.9
+EVT speech_end ms=1000 peak_dbfs=-48.5 clipped=0
+EVT lang en
+TXT PRSM can reheat the MSR equilibrium type what we are getting. Yeah, that's what I am.
+EVT time audio_ms=6200 encode_ms=6329 decode_ms=5135 tokens=32 peak_dbfs=-44.1
+[1;31mE (905567) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (905572) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (905577) sd_log: open /sdcard/rec_00117.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.0
+EVT lang de
+TXT Loki, erfreulich.
+EVT time audio_ms=1180 encode_ms=1119 decode_ms=1729 tokens=10 peak_dbfs=-45.4
+[1;31mE (908434) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (908438) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (908443) sd_log: open /sdcard/rec_00118.wav failed[0m
+EVT speech_end ms=2940 peak_dbfs=-45.9 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-60.1
+EVT lang en
+TXT Okay.
+EVT time audio_ms=1000 encode_ms=982 decode_ms=921 tokens=4 peak_dbfs=-48.5
+[1;31mE (910355) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (910357) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (910362) sd_log: open /sdcard/rec_00119.wav failed[0m
+EVT speech_end ms=1960 peak_dbfs=-43.5 clipped=0
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-62.4
+EVT speech_end ms=500 peak_dbfs=-47.5 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-65.5
+EVT speech_end ms=520 peak_dbfs=-57.8 clipped=0
+EVT drop pool_full
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-64.0
+EVT speech_end ms=500 peak_dbfs=-50.8 clipped=0
+EVT lang en
+TXT The aprief aptides, you testologist.
+EVT time audio_ms=2940 encode_ms=2769 decode_ms=2227 tokens=13 peak_dbfs=-45.9
+[1;31mE (915368) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (915373) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (915379) sd_log: open /sdcard/rec_00120.wav failed[0m
+EVT lang en
+TXT Sure, no.
+EVT time audio_ms=520 encode_ms=583 decode_ms=1034 tokens=5 peak_dbfs=-57.8
+[1;31mE (917004) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (917008) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (917013) sd_log: open /sdcard/rec_00121.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-58.9
+EVT lang en
+TXT Yeah.
+EVT time audio_ms=500 encode_ms=581 decode_ms=772 tokens=3 peak_dbfs=-50.8
+EVT speech_end ms=1260 peak_dbfs=-44.7 clipped=0
+[1;31mE (918995) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (918995) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (918999) sd_log: open /sdcard/rec_00122.wav failed[0m
+EVT speech_start floor_dbfs=-74.9 rms_dbfs=-63.6
+EVT speech_end ms=1520 peak_dbfs=-46.4 clipped=0
+EVT lang fr
+TXT Bien sûr, tu es un deux.
+EVT time audio_ms=1260 encode_ms=1172 decode_ms=2267 tokens=14 peak_dbfs=-44.7
+[1;31mE (922446) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x107, status 0x400d00[0m
+[1;31mE (922451) diskio_sdmmc: sdmmc_write_blocks failed (0x107)[0m
+[1;31mE (922456) sd_log: open /sdcard/rec_00123.wav failed[0m
+EVT lang en
+TXT Okay, wait, thank you.
+EVT time audio_ms=1520 encode_ms=1418 decode_ms=1742 tokens=10 peak_dbfs=-46.4
